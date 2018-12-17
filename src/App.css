@@ -36,6 +36,14 @@
   overflow: hidden;
 }
 
+.square:nth-of-type(3), .square:nth-of-type(6) {
+  border-right-width: 3px;
+}
+
+.row:nth-of-type(3) .square, .row:nth-of-type(6) .square {
+  border-bottom-width: 3px;
+}
+
 .square.selected {
   background: lightblue;
 }
@@ -46,7 +54,7 @@
 }
 
 .square.deterministic {
-  color: green;
+  background: lightgreen !important;
 }
 
 .row {
