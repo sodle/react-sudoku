@@ -45,7 +45,7 @@
 }
 
 .square.selected {
-  background: lightblue;
+  background: lightblue !important;
 }
 
 .square.filled {
@@ -54,7 +54,7 @@
 }
 
 .square.deterministic {
-  background: lightgreen !important;
+  background: lightgreen;
 }
 
 .row {
