@@ -21,7 +21,8 @@ class SquareView extends React.Component {
             <div className={[
                 'square',
                 (this.props.selected) ? 'selected': '',
-                (this.props.square.value !== 0) ? 'filled' : ''
+                (this.props.square.value !== 0) ? 'filled' : '',
+                (this.props.square.value === 0 && this.props.square.possibleValues().length === 1) ? 'deterministic' : ''
             ].join(' ')} onClick={this.onClick}>
                 {(this.props.square.value !== 0) ? this.props.square.value : this.props.square.possibleValues().join(' ')}
             </div>
